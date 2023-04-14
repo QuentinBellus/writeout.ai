@@ -12,6 +12,7 @@ RUN wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg
 RUN sh -c 'echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" > /etc/apt/sources.list.d/php.list'
 RUN apt update
 #RUN apt-get install -y apache2
+RUN apt-get install -y yarn
 RUN apt-get install -y php8.1
 RUN apt-get install -y php8.1-cli
 RUN apt-get install -y php8.1-simplexml
