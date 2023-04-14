@@ -19,10 +19,10 @@ RUN apt-get install -y php8.1-curl
 RUN apt-get install -y composer
 RUN apt-get install -y php8.1-mysql
 RUN composer install
-RUN sed 's/DB_HOST=127.0.0.1/DB_HOST=mysql/' .env.example > .env
-RUN sed -i 's/APP_URL=http:\/\/localhost/APP_URL=http:\/\/0.0.0.0/' .env
-RUN sed -i 's/APP_ENV=local/APP_ENV=production/' .env
-RUN php artisan key:generate
+#RUN sed 's/DB_HOST=127.0.0.1/DB_HOST=mysql/' .env.example > .env
+#RUN sed -i 's/APP_URL=http:\/\/localhost/APP_URL=http:\/\/0.0.0.0/' .env
+#RUN sed -i 's/APP_ENV=local/APP_ENV=production/' .env
+#RUN php artisan key:generate
 #RUN php artisan migrate
 #RUN php artisan serve
 #RUN cp apache.conf /etc/apache2/sites-available/000-default.conf

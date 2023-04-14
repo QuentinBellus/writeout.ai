@@ -2,6 +2,10 @@
 
 Transcribe and translate audio files using OpenAI's Whisper API.
 
+## Docker
+Customize the .env file and mount it to /var/www/ai/.env
+Template available at https://github.com/beyondcode/writeout.ai/blob/main/.env.example
+
 ## Demo
 
 ![demo](./docs/writeout-demo.gif)
