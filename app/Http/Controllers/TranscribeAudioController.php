@@ -29,8 +29,8 @@ class TranscribeAudioController extends Controller
         $filename = Str::random(40).'.'.$request->file('file')->getClientOriginalExtension();
 
         // Store the file in the public disk
-//        $path = $request->file('file')
-//            ->storePubliclyAs('transcribe', $filename, 'do');
+        $path = $request->file('file')
+            ->storePubliclyAs('transcribe', $filename, 'local');
 
         // Store the file locally temporarily for OpenAI
         $request->file('file')
