@@ -26,8 +26,8 @@ class TranscribeFileJob implements ShouldQueue
             'status' => TranscriptStatus::TRANSCRIBING,
         ]);
 
-        try {
-            $transcriptionResults = OpenAI::audio()->transcribe([
+	try {
+	     $transcriptionResults = OpenAI::audio()->transcribe([
                 'model' => 'whisper-1',
                 'file' => fopen(storage_path('app/'.$this->transcript->hash), 'r'),
                 'prompt' => $this->transcript->prompt,

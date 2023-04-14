@@ -38,7 +38,8 @@ class TranscribeAudioController extends Controller
 
         $transcript = Transcript::create([
             'user_id' => $request->user()->id,
-            'hash' => $path,
+	    //'hash' => $path,
+	    'hash' => "transcribe/" . $filename,
             'prompt' => $request->input('prompt', ''),
         ]);
 

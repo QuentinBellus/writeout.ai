@@ -27,11 +27,6 @@
             <div class="text-center flex flex-col items-center">
                 <h2 class="font-display text-3xl tracking-tight text-white sm:text-4xl pb-8">From audio...</h2>
 
-                <audio controls>
-                    <source
-                        src="{{ Storage::disk('do')->url(\App\Models\Transcript::firstWhere('public', true)->hash) }}"
-                        type="audio/mpeg">
-                </audio>
             </div>
             <div class="text-center">
                 <h2 class="font-display text-3xl tracking-tight text-white sm:text-4xl pb-8">...to transcript</h2>
@@ -40,8 +35,6 @@
                     In more than 10 languages, including Klingon 🤓
                 </p>
                 <p class="text-white pb-4 text-lg">
-                    Take a look at the <a class="font-medium underline" href="{{ action(\App\Http\Controllers\ShowTranscriptController::class, \App\Models\Transcript::firstWhere('public', true)) }}">
-                        demo.
                     </a>
                 </p>
 
