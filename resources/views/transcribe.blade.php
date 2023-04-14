@@ -68,7 +68,7 @@
                             </div>
                             <div class="ml-3">
                                 <label for="newsletter" class="text-sm font-medium leading-6 text-gray-900">Sign up to our newsletter</label>
-                                <p id="comments-description" class="text-sm text-gray-500">Stay informed about our developer tools, such was zhuan.lu</p>
+                                <p id="comments-description" class="text-sm text-gray-500">Stay informed about our developer tools, such was writeout.ai</p>
                             </div>
                         </div>
                     </div>

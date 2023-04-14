@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>zhuan.lu – Transcribe and translate any audio file</title>
+    <title>writeout.ai - Transcribe and translate any audio file</title>
     <meta
         name="description"
         content="Transcribe and translate any audio file. Upload your audio file and get a transcript in seconds. Writeout.ai is a free online transcription service.">
@@ -34,7 +34,7 @@
         <nav class="relative z-50 flex justify-between items-center">
             <div class="flex items-center md:gap-x-12">
                 <a aria-label="Home" href="/#" class="font-bold text-xl font-display">
-                    zhuan.lu
+                    writeout.ai
                 </a>
             </div>
 	    <div>
