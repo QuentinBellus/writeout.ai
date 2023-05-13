@@ -29,6 +29,8 @@ RUN apt-get install -y nodejs
 #RUN php artisan migrate
 #RUN php artisan serve
 #RUN cp apache.conf /etc/apache2/sites-available/000-default.conf
+RUN sed -i 's/upload_max_filesize = .*/upload_max_filesize = 25M/g' /etc/php/8.1/cli/php.ini
+RUN sed -i 's/post_max_size = .*/post_max_size = 25M/g' /etc/php/8.1/cli/php.ini
 RUN chown -R www-data:www-data /var/www/ai
 RUN npm i
 RUN npm run build
