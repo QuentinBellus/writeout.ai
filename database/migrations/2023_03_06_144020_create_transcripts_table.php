@@ -19,7 +19,7 @@ return new class extends Migration {
             $table->longText('transcript')->nullable();
             $table->json('translations')->nullable();
             $table->text('error')->nullable();
-            $table->string('prompt')->nullable();
+            $table->text('prompt')->nullable();
             $table->timestamps();
         });
     }
